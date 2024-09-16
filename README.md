@@ -12,3 +12,6 @@ Run npm i && npm run dev
 - Tiles are 16x16
 - Font for logo is Bad Mofo
 - Font for buttons is Courier size 16px
+
+Server Template from:
+https://github.com/BradySBaker/TypeScript-SocketIO-Phaser-Game
