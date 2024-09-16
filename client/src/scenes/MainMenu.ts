@@ -1,6 +1,6 @@
 import { Scene } from 'phaser';
 
-import { Button } from '../../public/assets/class/button'
+import { Button } from '../../dist/assets/class/button'
 
 export class MainMenu extends Scene
 {

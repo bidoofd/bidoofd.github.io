@@ -1,4 +1,5 @@
-node_modules/
-bundle.min.js
-.vscode
-.DS_Store
+node_modules
+.parcel-cache
+./server/compiled
+client/dist/*
+!client/dist/assets/

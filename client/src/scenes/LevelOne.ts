@@ -1,6 +1,6 @@
 import { Scene, GameObjects, Physics, Types, Tilemaps } from 'phaser';
-import { PageButton } from '../../public/assets/class/button';
-import { Helper } from '../../public/assets/helpers/helpers';
+import { PageButton } from '../../dist/assets/class/button';
+import { Helper } from '../../dist/assets/helpers/helpers';
 
 export class LevelOne extends Scene
 {

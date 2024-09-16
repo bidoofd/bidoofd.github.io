@@ -1,25 +1,34 @@
 {
-    "name": "browser-game",
-    "description": "broswer game",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node esbuild/dev.server.mjs -w",
-        "build": "node esbuild/build.prod.mjs"
-    },
-    "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
-    "license": "MIT",
-    "dependencies": {
-        "phaser": "^3.80.1"
-    },
-    "devDependencies": {
-        "@jgoz/esbuild-plugin-livereload": "^2.0.5",
-        "@types/node": "^22.5.2",
-        "esbuild": "^0.21.2",
-        "esbuild-plugin-clean": "^1.0.1",
-        "esbuild-plugin-copy": "^2.1.1",
-        "esbuild-plugin-inline-image": "^0.0.9",
-        "esbuild-serve": "^1.0.1",
-        "typescript": "^5.5.4"
-    }
+  "name": "browser-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "parcel client/src/baseFiles/index.html --dist-dir client/dist -p 2000",
+    "server": "nodemon --exec 'ts-node' server/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.9.3",
+    "phaser": "^3.60.0",
+    "seedrandom": "^3.0.5",
+    "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "@types/seedrandom": "^3.0.8",
+    "@types/socket.io": "^3.0.2",
+    "browserify-zlib": "^0.2.0",
+    "buffer": "^6.0.3",
+    "nodemon": "^3.0.1",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "ts-node": "^10.9.1",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0"
+  }
 }
