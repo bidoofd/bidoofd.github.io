@@ -1,25 +1,30 @@
 {
-    "name": "browser-game",
-    "description": "broswer game",
-    "version": "1.0.0",
-    "main": "index.js",
-    "scripts": {
-        "dev": "node esbuild/dev.server.mjs -w",
-        "build": "node esbuild/build.prod.mjs"
+    "name": "template-vite-ts",
+    "description": "A Phaser 3 TypeScript template using Vite.",
+    "version": "1.3.2",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/phaserjs/template-vite-ts.git"
     },
     "author": "Phaser Studio <support@phaser.io> (https://phaser.io/)",
     "license": "MIT",
-    "dependencies": {
-        "phaser": "^3.80.1"
+    "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+    "bugs": {
+        "url": "https://github.com/phaserjs/template-vite-ts/issues"
+    },
+    "homepage": "https://github.com/phaserjs/template-vite-ts#readme",
+    "scripts": {
+        "dev": "node log.js dev & vite --config vite/config.dev.mjs",
+        "build": "node log.js build & vite build --config vite/config.prod.mjs",
+        "dev-nolog": "vite --config vite/config.dev.mjs",
+        "build-nolog": "vite build --config vite/config.prod.mjs"
     },
     "devDependencies": {
-        "@jgoz/esbuild-plugin-livereload": "^2.0.5",
-        "@types/node": "^22.5.2",
-        "esbuild": "^0.21.2",
-        "esbuild-plugin-clean": "^1.0.1",
-        "esbuild-plugin-copy": "^2.1.1",
-        "esbuild-plugin-inline-image": "^0.0.9",
-        "esbuild-serve": "^1.0.1",
-        "typescript": "^5.5.4"
+        "terser": "^5.31.0",
+        "typescript": "^5.4.5",
+        "vite": "^5.3.1"
+    },
+    "dependencies": {
+        "phaser": "^3.85.2"
     }
 }

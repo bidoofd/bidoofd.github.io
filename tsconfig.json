@@ -9,29 +9,20 @@
             "DOM.Iterable"
         ],
         "skipLibCheck": true,
-        "resolveJsonModule": true,
+        /* Bundler mode */
         "moduleResolution": "bundler",
-        "allowJs": true,
         "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
         "isolatedModules": true,
         "noEmit": true,
+        /* Linting */
         "strict": true,
         "strictPropertyInitialization": false,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true,
-        "typeRoots": [
-            "node_modules/@types",
-            "node_modules/phaser/types"
-        ],
-        "types": [
-            "phaser",
-            "node"
-        ],
-        "strictNullChecks": true
+        "noFallthroughCasesInSwitch": true
     },
     "include": [
-        "src",
-        "assets"
-, "public/assets/class"    ]
+        "src"
+    ]
 }
